@@ -7,7 +7,7 @@ We get our surveys from many different providers and sometimes the duration they
 Once some of our users have taken a survey we can look at how long they took and estimate what the real duration of the survey is. 
 
 
-We have created an endpoint `GET /survey-completed-event` that returns single events of when a user completes a survey. The JSON data returned by the endpoint looks as follows:
+We have created a publicly available endpoint (`GET https://qmee-tech-test.herokuapp.com/survey-completed-event`) that returns single events of when a user completes a survey. The JSON data returned by the endpoint looks as follows:
 
 ```
 {
@@ -21,8 +21,9 @@ Furthermore every event contains a `surveyId` that can be used to identify a sur
 Every survey can have multiple starts by different users and therefore multiple events associated with it.
 
 # The task
-Write a short program that looks at multiple events and works out the average time each survey takes.
-Tell us the average time in minutes each survey returned by the endpoint takes. (There is a finite number of surveys)
+Write a short program in the language of your choice that queries multiple events and works out the average time each survey takes.
+Once you have completed the task send us the collected data and share your code with us.
+Please focus on writing clean code that is following best practices (tests are a plus).
 
 ## Bonus task
 What other information can you collect that is helpful to the user and allow them to make a more informed decision when choosing a survey.
